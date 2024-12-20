@@ -1,0 +1,336 @@
+/* Style for Technologies Section */
+#technologies {
+    padding: 100px 20px; /* Add padding around the entire section */
+    /* background-color: rgb(240, 240, 240);  */
+    background-color: rgb(245, 245, 245);
+    text-align: center; /* Center-align content */
+}
+
+/* Header Styling */
+.Languages {
+    margin-bottom: 30px; /* Reduced space between the header and logos */
+}
+
+.Languages h1 {
+    font-size: 4rem; /* Large heading font size */
+    /* color: #333;  */
+    color: #555;
+    margin-bottom: 10px; /* Less space between h1 and h3 */
+    font-weight: bold;
+    text-transform: uppercase;
+
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.Languages h3 {
+    font-size: 1.5rem; /* Subheading font size */
+    color: #555; /* Medium gray color */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Logo Container Styling */
+#logo-container {
+    display: flex; /* Use flexbox to arrange logos */
+    justify-content: center; /* Center logos horizontally */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Reduced spacing between logos */
+    padding: 10px; /* Minimized padding inside the container */
+    max-width: 800px; /* Limit the width of the logo container */
+    margin: 0 auto; /* Center the container within the section */
+}
+
+  
+  .logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    cursor: copy;
+  }
+
+  .logo-item:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo and name */
+  }
+  
+  .tech-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .logo-item span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .logo-item:hover span {
+    color: #666; /* Lighter shade of the name color */
+  }
+
+
+  
+
+
+
+
+/* PROJECTS */
+
+/* Projects Section */
+#projects {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Section Header */
+.projects-header h1 {
+    font-size: 4rem;
+    /* color: #333; */
+    color: #555;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.projects-header h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Projects Container */
+.projects-container {
+    max-width: 1300px; /* Defines container width */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 30px; /* Add space between cards */
+    width: 90%; /* Adjust the width of the container */
+    margin: 0 auto; /* Center the container */
+    justify-items: center;
+}
+
+/* Project Card */
+.project-card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px; /* Controls individual card width */
+
+    padding: 0px 0px 25px 0px;
+}
+
+/* Thumbnail */
+.project-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Title */
+.project-title {
+    font-size: 1.4rem;
+    color: #222;
+    margin: 15px;
+}
+
+/* Description */
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 15px 20px;
+    line-height: 1.5;
+}
+
+
+
+
+
+/* BUTTON */
+/* From Uiverse.io by faxriddin20 */ 
+#btn{
+position: relative;
+left: 10px;
+}
+
+
+.ui-btn {
+    --btn-default-bg: white;
+    --btn-padding: 15px 20px;
+    --btn-hover-bg: white;
+    --btn-transition: 0.3s;
+    --btn-letter-spacing: 0.1rem;
+    --btn-animation-duration: 1.2s;
+    --btn-shadow-color: rgba(0, 0, 0, 0.137);
+    --btn-shadow: 0 2px 1px 1px var(--btn-shadow-color);
+    --hover-btn-color: rgb(0, 0, 0);
+    --default-btn-color: white;
+    --font-size: 16px;
+    /* 👆 this field should not be empty */
+    --font-weight: 600;
+    --font-family: Menlo, Roboto Mono, monospace;
+    /* 👆 this field should not be empty */
+  }
+  
+  /* button settings 👆 */
+  
+  .ui-btn {
+    box-sizing: border-box;
+    padding: var(--btn-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-btn-color);
+    font: var(--font-weight) var(--font-size) var(--font-family);
+    background: var(--btn-default-bg);
+    border: none;
+    cursor: pointer;
+    transition: var(--btn-transition);
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+  }
+  
+  .ui-btn span {
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    background: inherit;
+  }
+  
+  .ui-btn span::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+  }
+  
+  .ui-btn:hover,
+  .ui-btn:focus {
+    background: var(--btn-hover-bg);
+  }
+  
+  .ui-btn:hover span,
+  .ui-btn:focus span {
+    color: var(--hover-btn-color);
+  }
+  
+  .ui-btn:hover span::before,
+  .ui-btn:focus span::before {
+    animation: chitchat linear both var(--btn-animation-duration);
+  }
+  
+  @keyframes chitchat {
+    0% {
+      content: "#";
+    }
+  
+    5% {
+      content: ".";
+    }
+  
+    10% {
+      content: "^{";
+    }
+  
+    15% {
+      content: "-!";
+    }
+  
+    20% {
+      content: "#$_";
+    }
+  
+    25% {
+      content: "№:0";
+    }
+  
+    30% {
+      content: "#{+.";}35%{content: "@}-?";
+    }
+  
+    40% {
+      content: "?{4@%";
+    }
+  
+    45% {
+      content: "=.,^!";
+    }
+  
+    50% {
+      content: "?2@%";
+    }
+  
+    55% {
+      content: "\;1}]";
+    }
+  
+    60% {
+      content: "?{%:%";
+      right: 0;
+    }
+  
+    65% {
+      content: "|{f[4";
+      right: 0;
+    }
+  
+    70% {
+      content: "{4%0%";
+      right: 0;
+    }
+  
+    75% {
+      content: "'1_0<";
+      right: 0;
+    }
+  
+    80% {
+      content: "{0%";
+      right: 0;
+    }
+  
+    85% {
+      content: "]>'";
+      right: 0;
+    }
+  
+    90% {
+      content: "4";
+      right: 0;
+    }
+  
+    95% {
+      content: "2";
+      right: 0;
+    }
+  
+    100% {
+      content: "";
+      right: 0;
+    }
+  }
+  
+  #btn .ui-btn span a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+
+  /*  */

@@ -58,3 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
+// TECH
+// Get the video element
+const video = document.getElementById('background-video');
+
+// Slow down the video (set playback rate to 0.5 for half speed)
+video.playbackRate = 0.5;
+
+
+
