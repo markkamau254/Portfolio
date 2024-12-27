@@ -1,81 +1,3 @@
-/* Style for Technologies Section */
-#technologies {
-    padding: 100px 20px; /* Add padding around the entire section */
-    /* background-color: rgb(240, 240, 240);  */
-    background-color: rgb(245, 245, 245);
-    text-align: center; /* Center-align content */
-}
-
-/* Header Styling */
-.Languages {
-    margin-bottom: 30px; /* Reduced space between the header and logos */
-}
-
-.Languages h1 {
-    font-size: 4rem; /* Large heading font size */
-    /* color: #333;  */
-    color: #555;
-    margin-bottom: 10px; /* Less space between h1 and h3 */
-    font-weight: bold;
-    text-transform: uppercase;
-
-    font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
-.Languages h3 {
-    font-size: 1.5rem; /* Subheading font size */
-    color: #555; /* Medium gray color */
-    line-height: 1.6; /* Improve readability */
-}
-
-/* Logo Container Styling */
-#logo-container {
-    display: flex; /* Use flexbox to arrange logos */
-    justify-content: center; /* Center logos horizontally */
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    gap: 20px; /* Reduced spacing between logos */
-    padding: 10px; /* Minimized padding inside the container */
-    max-width: 800px; /* Limit the width of the logo container */
-    margin: 0 auto; /* Center the container within the section */
-}
-
-  
-  .logo-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    cursor: copy;
-  }
-
-  .logo-item:hover {
-    transform: scale(1.1); /* Slightly enlarge the logo and name */
-  }
-  
-  .tech-logo {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .logo-item span {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .logo-item:hover span {
-    color: #666; /* Lighter shade of the name color */
-  }
-
-
-  
-
-
 
 
 /* PROJECTS */
@@ -103,7 +25,7 @@
 
 .projects-header h3 {
     font-size: 1.5rem;
-    color: #555;
+    color: grey;
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -332,5 +254,163 @@ left: 10px;
 
 
 
+/* Mobile (540px and below) */
+@media screen and (max-width: 540px) {
+  #projects {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
 
-  /*  */
+/* Section Header */
+.projects-header h1 {
+  font-size: 3rem; 
+    /* color: #333; */
+    color: #555;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.projects-header h3 {
+  font-size: 1rem;
+    color: grey;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Projects Container */
+.projects-container {
+    max-width: 1300px; /* Defines container width */
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 30px; /* Add space between cards */
+    width: 90%; /* Adjust the width of the container */
+    margin: 0 auto; /* Center the container */
+    justify-items: center;
+}
+
+/* Project Card */
+.project-card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px; /* Controls individual card width */
+
+    padding: 0px 0px 25px 0px;
+}
+
+/* Thumbnail */
+.project-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Title */
+.project-title {
+    font-size: 1.4rem;
+    color: #222;
+    margin: 15px;
+}
+
+/* Description */
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 15px 20px;
+    line-height: 1.5;
+}
+
+}
+
+
+/* Mobile (400px and below) */
+@media screen and (max-width: 400px) {
+  #projects {
+    padding: 100px 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Section Header */
+.projects-header h1 {
+    font-size: 3rem;
+    /* color: #333; */
+    color: #555;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.projects-header h3 {
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Projects Container */
+.projects-container {
+    max-width: 1300px; /* Defines container width */
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 30px; /* Add space between cards */
+    width: 90%; /* Adjust the width of the container */
+    margin: 0 auto; /* Center the container */
+    justify-items: center;
+}
+
+/* Project Card */
+.project-card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px; /* Controls individual card width */
+
+    padding: 0px 0px 25px 0px;
+}
+
+/* Thumbnail */
+.project-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Title */
+.project-title {
+    font-size: 1.4rem;
+    color: #222;
+    margin: 15px;
+}
+
+/* Description */
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 15px 20px;
+    line-height: 1.5;
+}
+
+}

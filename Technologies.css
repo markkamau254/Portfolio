@@ -1,0 +1,237 @@
+/* Style for Technologies Section */
+#technologies {
+    padding: 100px 20px; /* Add padding around the entire section */
+    /* background-color: rgb(240, 240, 240);  */
+    background-color: rgb(245, 245, 245);
+    text-align: center; /* Center-align content */
+}
+
+/* Header Styling */
+.Languages {
+    margin-bottom: 30px; /* Reduced space between the header and logos */
+}
+
+.Languages h1 {
+    font-size: 4rem; /* Large heading font size */
+    /* color: #333;  */
+    color: #555;
+    margin-bottom: 10px; /* Less space between h1 and h3 */
+    font-weight: bold;
+    text-transform: uppercase;
+
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.Languages h3 {
+    font-size: 1.5rem; /* Subheading font size */
+    color: grey;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Logo Container Styling */
+#logo-container {
+    display: flex; /* Use flexbox to arrange logos */
+    justify-content: center; /* Center logos horizontally */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Reduced spacing between logos */
+    padding: 10px; /* Minimized padding inside the container */
+    max-width: 800px; /* Limit the width of the logo container */
+    margin: 0 auto; /* Center the container within the section */
+}
+
+  
+  .logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    cursor: copy;
+  }
+
+  .logo-item:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo and name */
+  }
+  
+  .tech-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .logo-item span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .logo-item:hover span {
+    color: #666; /* Lighter shade of the name color */
+  }
+
+
+  
+
+
+/* Mobile (540px and below) */
+@media screen and (max-width: 540px) {
+/* Style for Technologies Section */
+#technologies {
+  padding: 100px 20px; /* Add padding around the entire section */
+  /* background-color: rgb(240, 240, 240);  */
+  background-color: rgb(245, 245, 245);
+  text-align: center; /* Center-align content */
+}
+
+/* Header Styling */
+.Languages {
+  margin-bottom: 30px; /* Reduced space between the header and logos */
+}
+
+.Languages h1 {
+  font-size: 3rem; /* Large heading font size */
+  /* color: #333;  */
+  color: #555;
+  margin-bottom: 10px; /* Less space between h1 and h3 */
+  font-weight: bold;
+  text-transform: uppercase;
+
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.Languages h3 {
+  font-size: 1rem; /* Subheading font size */
+  color: grey;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Logo Container Styling */
+#logo-container {
+  display: flex; /* Use flexbox to arrange logos */
+  justify-content: center; /* Center logos horizontally */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 20px; /* Reduced spacing between logos */
+  padding: 10px; /* Minimized padding inside the container */
+  max-width: 800px; /* Limit the width of the logo container */
+  margin: 0 auto; /* Center the container within the section */
+}
+
+
+.logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  cursor: copy;
+}
+
+.logo-item:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo and name */
+}
+
+.tech-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo-item span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo-item:hover span {
+  color: #666; /* Lighter shade of the name color */
+}
+
+
+}
+
+
+
+/* Mobile (4000px and below) */
+@media screen and (max-width: 400px) {
+  /* Style for Technologies Section */
+  #technologies {
+    padding: 100px 20px; /* Add padding around the entire section */
+    /* background-color: rgb(240, 240, 240);  */
+    background-color: rgb(245, 245, 245);
+    text-align: center; /* Center-align content */
+  }
+  
+  /* Header Styling */
+  .Languages {
+    margin-bottom: 30px; /* Reduced space between the header and logos */
+  }
+  
+  .Languages h1 {
+    font-size: 2rem; /* Large heading font size */
+    /* color: #333;  */
+    color: #555;
+    margin-bottom: 10px; /* Less space between h1 and h3 */
+    font-weight: bold;
+    text-transform: uppercase;
+  
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+  .Languages h3 {
+    font-size: 1rem; /* Subheading font size */
+    color: grey;
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  /* Logo Container Styling */
+  #logo-container {
+    display: flex; /* Use flexbox to arrange logos */
+    justify-content: center; /* Center logos horizontally */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Reduced spacing between logos */
+    padding: 10px; /* Minimized padding inside the container */
+    max-width: 800px; /* Limit the width of the logo container */
+    margin: 0 auto; /* Center the container within the section */
+  }
+  
+  
+  .logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+    cursor: copy;
+  }
+  
+  .logo-item:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo and name */
+  }
+  
+  .tech-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .logo-item span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .logo-item:hover span {
+    color: #666; /* Lighter shade of the name color */
+  }
+  
+  
+  }

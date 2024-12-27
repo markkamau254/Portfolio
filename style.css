@@ -473,185 +473,102 @@ header.scrolled .logo-image {
 
 
 
-/* WORLD */
 
-
-
-#world {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    gap: 10vh;
-    text-align: start;
-    justify-content: center; /* Center aligns the services section */
-    padding: 15vh 5.5%;
-    position: relative;
-    left: +5.5%;
-}
-
-#world .ME {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
-#world .Services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10vh;
-}
-
-.containe img {
-    width: 8vh;
-    padding-bottom: 2vh;
-}
-
-.ME h3 {
-    font-size: 30px;
-    color: grey;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.ME h1 {
-    font-size: 55px;
-    color: #555;
-    font-weight: 900;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-
-    
-}
-
-.ME hr {
-    width: 285px;
-    height: 4px;
-    background-color: grey;
-    border: none;
-    margin-bottom: 20px;
-}
-
-.ME p {
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 1.8;
-    color: grey;
-    margin-bottom: 30px;
-}
-
-.Services h2 {
-    font-weight: bold;
-    font-size: 30px;
-    padding-bottom: 1vh;
-}
-
-.Services p {
-    font-size: 1.3em;
-}
-
-/* BTN */
-#btn {
-    padding: 15px 25px;
-    background-color: #fff;
-    border: none;
-    font-size: 18px;
-    position: relative;
-    transition: 500ms;
-
-    cursor: pointer;
-}
-
-#btn span {
-    position: relative;
-    transition: 500ms;
-    transition-delay: 500ms;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-}
-
-#btn span a{
-    color: black;
-    text-decoration: none;
-}
-
-#btn:before {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 0%;
-    left: 50%;
-    right: 50%;
-    top: 50%;
-    bottom: 50%;
-    transition: 500ms;
-    transition-delay: 500ms;
-}
-
-#btn div {
-    transition: 500ms;
-    position: absolute;
-    background-color: black;
-}
-
-#btn .top {
-    width: 25px;
-    height: 2px;
-    top: 0;
-    left: 0;
-}
-
-#btn .bottom {
-    width: 25px;
-    height: 2px;
-    bottom: 0;
-    right: 0;
-}
-
-button .left {
-    width: 2px;
-    height: 25px;
-    top: 0;
-    left: 0;
-}
-
-#btn .right {
-    width: 2px;
-    height: 25px;
-    bottom: 0;
-    right: 0;
-}
-
-#btn:hover {
-    color: #000;
-}
-
-#btn:hover span {
-    color: #000;
-}
-
-#btn:hover:before {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-#btn:hover .top,
-#btn:hover .bottom {
-    width: 100%;
-}
-
-#btn:hover .left,
-#btn:hover .right {
-    height: 100%;
-}
+/*  */
 
 /* Media Queries for Responsiveness */
+
+
+  /* Mobile (1000px and below) */
+  @media screen and (max-width: 1030px) {
+
+    /* Blogger Section */
+    #Blogger {
+        padding: 50px 5px;
+        text-align: center;
+      }
+      
+      /* Card Container */
+      .SS {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto; /* Rows adjust based on content */
+        gap: 40px; /* Spacing between cards */
+        padding: 20px;
+      }
+      
+      /* Card Styles */
+      .cad {
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        min-height: 300px; /* Ensure consistent card height */
+      }
+      
+      .cad:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      }
+      
+      /* Remove Column Spanning */
+      .cad-2, .cad-3, .cad-1, .cad-4 {
+        grid-column: span 1; /* All cards span 1 column (no overlaps) */
+      }
+      
+    
+        
+    }
+
+
+
+
+
+  /* Mobile (1000px and below) */
+@media screen and (max-width: 800px) {
+
+    /* Blogger Section */
+    #Blogger {
+        padding: 50px 5px;
+        text-align: center;
+      }
+      
+      /* Card Container */
+      .SS {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto; /* Rows adjust based on content */
+        gap: 20px; /* Spacing between cards */
+        padding: 20px;
+      }
+      
+      /* Card Styles */
+      .cad {
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        min-height: 300px; /* Ensure consistent card height */
+      }
+      
+      .cad:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      }
+      
+      /* Remove Column Spanning */
+      .cad-2, .cad-3, .cad-1, .cad-4 {
+        grid-column: span 1; /* All cards span 1 column (no overlaps) */
+      }
+      
+    
+        
+    }
+
+
+
 /* Tablet (768px and below) */
 @media screen and (max-width: 768px) {
     .slider .list::after {
@@ -801,127 +718,7 @@ button .left {
 
 /* Mobile (480px and below) */
 @media screen and (max-width: 420px) {
-    #world {
-        padding: 10vh 5%;
-    }
-
-    .slider .list .item .content{
-        padding-top: 13vh;
-    }
-
-    .slider .list .item .content h2 {
-        font-size: 70px;
-        width: 23vh;
-    }
-
-    .slider .list .item .content .work{
-        width: 30vh;
-        position: relative;
-        top: -1vh;
-    }
-
-    .slider .list .item .content .yapp{
-        position: relative;
-        top: -4vh;
-    }
-
-    .ME h1 {
-        font-size: 30px;
-    }
-
-    .ME p {
-        font-size: 14px;
-    }
-
-    .Services {
-        gap: 3vh;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .card-1, .card-2, .card-3, .card-4 {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .containe img {
-        width: 10vh;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 12px 20px;
-    }
-}
-
-
-/* Mobile (380px and below) */
-@media screen and (max-width: 400px) {
-    #world {
-        padding: 2.5vh 2.5%;
-    }
-
-   
-    .slider .list .item .content{
-        padding-top: 5vh;
-    }
-
-    .slider .list .item .content h2 {
-        font-size: 70px;
-        width: 25vh;
-    }
-
-    .slider .list .item .content .work{
-        width: 30vh;
-        position: relative;
-        top: -1vh;
-    }
-
-    .slider .list .item .content .yapp{
-        position: relative;
-        top: -4vh;
-    }
-
-
-
-    .ME h1 {
-        font-size: 15px;
-    }
-
-    .ME p {
-        font-size: 7px;
-    }
-
-    .Services {
-        gap: 1.5vh;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .card-1, .card-2, .card-3, .card-4 {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .containe img {
-        width: 5vh;
-    }
-
-    button {
-        font-size: 8px;
-        padding: 6px 10px;
-    }
-}
-
-
-
-/* Mobile (380px and below) */
-@media screen and (max-width: 380px) {
-    #world {
-        padding: 2.5vh 2.5%;
-    }
-
-/*    
+  /*    
     .slider .list .item .content{
         padding-top: 0vh;
     }
@@ -937,50 +734,49 @@ button .left {
     } 
      
     .slider .list .item .content h2 {
-        font-size: 70px;
-        width: 33vh;
+        font-size: 75px;
+        width: 25vh;
     }
 
     .slider .list .item .content .work{
         width: 30vh;
         position: relative;
-        top: -2vh;
+        top: -1.5vh;
+        font-size: 38px;
     }
 
     .slider .list .item .content .yapp{
         position: relative;
-        top: -7vh;
+        top: -4vh;
+        font-size: 17px;
+    }
+}
+
+
+
+/* Mobile (380px and below) */
+@media screen and (max-width: 380px) {
+   
+    .slider .list .item .content h2 {
+        position: relative;
+        top: -5vh;
+        font-size: 70px;
+        width: 33vh;
     }
 
+    .slider .list .item .content .work{
+        width: 35vh;
+        position: relative;
+        top: -7vh;
+        font-size: 35px;
+    }
 
-
-    .ME h1 {
+    .slider .list .item .content .yapp{
+        position: relative;
+        top: -11.5vh;
         font-size: 15px;
     }
 
-    .ME p {
-        font-size: 7px;
-    }
-
-    .Services {
-        gap: 1.5vh;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .card-1, .card-2, .card-3, .card-4 {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .containe img {
-        width: 5vh;
-    }
-
-    button {
-        font-size: 8px;
-        padding: 6px 10px;
-    }
 }
 
 /* Mobile (360px and below) */
@@ -1042,185 +838,4 @@ button .left {
 }
 
 
-
-
   
-/* Blog */
-
-
-#Blogger {
-    padding: 100px 200px;
-    /* background-color: #f9f9f9;  */
-    background-color: rgb(245, 245, 245);
-    background-color: rgb(245, 245, 245);
-    text-align: center;
-}
-
-
-
-/* Card Container */
-.SS {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    grid-template-rows: repeat(2, 300px); /* Two rows */
-    gap: 40px;
-    padding: 20px;
-  }
-  
- 
-
-  /* Card Styles */
-.cad {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 
-      0 4px 6px rgba(0, 0, 0, 0.1), /* Subtle inner shadow */
-      0 10px 20px rgba(0, 0, 0, 0.15), /* Larger, soft shadow */
-      0 20px 40px rgba(0, 0, 0, 0.2); /* Farther, more diffused shadow */
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .cad:hover {
-    transform: translateY(-8px);
-    box-shadow: 
-      0 8px 12px rgba(0, 0, 0, 0.15), /* Slightly closer shadow */
-      0 20px 30px rgba(0, 0, 0, 0.2), /* Deeper soft shadow */
-      0 30px 50px rgba(0, 0, 0, 0.25); /* Stronger drop shadow for hover */
-  }
-  
-  
-
-  /* Adjust Card Sizes */
-.cad-2, .cad-3 {
-    grid-column: span 1; /* Cards 2 and 3 span 1 column */
-  }
-
-.cad-1, .cad-4 {
-    grid-column: span 3; /* Cards 1 and 4 span 3 columns */
-  }
-  
-  
-  /* Background Images */
-  .cad-1 {
-    background-image: url('img/ppw15.jpg'); /* Replace with your image URL */
-  }
-  
-  .cad-2 {
-    background-image: url('img/ppw20.jpg'); /* Replace with your image URL */
-  }
-  
-  .cad-3 {
-    background-image: url('img/ppw17.jpg'); /* Replace with your image URL */
-  }
-  
-  .cad-4 {
-    background-image: url('img/ppw22.jpg'); /* Replace with your image URL */
-  }
-  
-
-
-
-
-
-  
-
-  /* Mobile (1000px and below) */
-@media screen and (max-width: 1030px) {
-
-    /* Blogger Section */
-    #Blogger {
-        padding: 50px 5px;
-        text-align: center;
-      }
-      
-      /* Card Container */
-      .SS {
-        display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Rows adjust based on content */
-        gap: 40px; /* Spacing between cards */
-        padding: 20px;
-      }
-      
-      /* Card Styles */
-      .cad {
-        background-color: #fff;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.3s, box-shadow 0.3s;
-        min-height: 300px; /* Ensure consistent card height */
-      }
-      
-      .cad:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-      }
-      
-      /* Remove Column Spanning */
-      .cad-2, .cad-3, .cad-1, .cad-4 {
-        grid-column: span 1; /* All cards span 1 column (no overlaps) */
-      }
-      
-    
-        
-    }
-
-
-
-
-
-  /* Mobile (1000px and below) */
-@media screen and (max-width: 800px) {
-
-    /* Blogger Section */
-    #Blogger {
-        padding: 50px 5px;
-        text-align: center;
-      }
-      
-      /* Card Container */
-      .SS {
-        display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Rows adjust based on content */
-        gap: 20px; /* Spacing between cards */
-        padding: 20px;
-      }
-      
-      /* Card Styles */
-      .cad {
-        background-color: #fff;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.3s, box-shadow 0.3s;
-        min-height: 300px; /* Ensure consistent card height */
-      }
-      
-      .cad:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-      }
-      
-      /* Remove Column Spanning */
-      .cad-2, .cad-3, .cad-1, .cad-4 {
-        grid-column: span 1; /* All cards span 1 column (no overlaps) */
-      }
-      
-    
-        
-    }
-
-
-    /* Footer */
-    #Footer{
-        position: relative;
-        width: 100%;
-        height: 30vh;
-        overflow: hidden;
-    }
-
-
