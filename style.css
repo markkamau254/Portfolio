@@ -3,12 +3,15 @@
 /* 1200 x 780 */
 body{
     margin: 0;
+    padding: 0;
     font-size: 15px;
     /* background-color: #e0e0e0; */
     background-color: white;
     height: 200vh;
     overflow-x: hidden;
 }
+
+
 *{
     padding: 0;
     margin: 0;
@@ -24,142 +27,29 @@ body{
 
 
 
-/* NAVBAR */
-/* Header Styling */
-header {
-    width: 100%;
-    height: 12vh;
-    padding: 0px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    transition: all 0.5s ease;
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-header.transparent {
-    background-color: transparent;
-    box-shadow: none;
-}
-
-header.scrolled {
-    /* background-color: #e0e0e0; */
-    background-color: rgb(245, 245, 245);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 7vh; 
-    padding: 0px 80px;
-}
-
-/* Navigation Styling */
-nav ul {
-    display: flex;
-    gap: 30px;
-    position: relative;
-    left: +55px;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #eee;
-    font-size: 15px;
-    font-weight: 800;
-    position: relative;
-    right: 17vh;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-}
-
-nav ul li a span {
-    position: relative;
-}
-
-nav ul li a span::after {
-    content: '';
-    position: absolute;
-    bottom: -4px; 
-    left: 50%; 
-    width: 0;
-    height: 2px;
-    background-color: #e0e0e0;
-    transition: all 0.4s ease; 
-    transform: translateX(-50%); 
-}
-
-nav ul li a span:hover::after {
-    width: 100%; 
-}
-
-.home-link::after {
-    width: 100%;
-}
-
-header.scrolled nav ul li a span::after {
-    background-color: #e0e0e0;
-}
-
-/* Icon Styling */
-nav ul li .join {
-    padding-right: 40px;
-}
-
-nav ul li a i {
-    margin-left: -18px;
-    font-size: 16.5px;
-}
-
-nav ul li .lens {
-    padding-left: 50px;
-}
-
-header.scrolled nav ul li a {
-    color: grey; 
-    font-size: 12px; 
-    text-shadow: none;
-}
-
-header.scrolled nav ul li a i {
-    margin-left: -18px;
-    font-size: 16.5px;
-}
-
-header.scrolled nav ul li .lens {
-    padding-left: 39px;
-}
-
-header.scrolled nav ul {
-    position: relative;
-    left: +45px;
-}
+/* * {
+    border: 1px solid red;
+}  */
 
 
- /* Logo Image Transition */
-.logo-image {
-    width: 120px;
-    position: relative;
-    top: 20px;
-    left: 2.6vh;
-    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+/* html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+} */
 
-    cursor: pointer;
-}
 
-header.scrolled .logo-image {
-    width: 150px;
-    transform: translateY(0); /* Avoid sudden jumps */
-    height: 15vh;
-    position: relative;
-    top: 30px;
-    left: 3.5vh;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-}
-
+/* * {
+    outline: 1px solid red;
+} */
 
 
 
@@ -174,7 +64,7 @@ header.scrolled .logo-image {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    margin-top: -70px;
+    margin-top: -40px;
 
     /* box-shadow: 0 8px 36px 4px rgba(0, 0, 0, 0.8); */
 }
@@ -190,7 +80,7 @@ header.scrolled .logo-image {
 
 .slider .list .item .content {
     position: absolute;
-    top: 35%; /* Increase the distance from the top */
+    top: 45%; /* Increase the distance from the top */
     left: 6.5%; /* Push the content slightly to the left */
     transform: translateX(0); /* Remove the center alignment */
     width: 80%; /* Restrict the width to prevent stretching */
@@ -213,7 +103,7 @@ header.scrolled .logo-image {
 
 .slider .list .item .content h2{
     position: relative;
-    /* top: 12vh; */
+    /* top: -12vh; */
     /* left: -47vh; */
     font-size: 139px;
     font-family: 'Bebas Neue', sans-serif;
@@ -227,9 +117,9 @@ header.scrolled .logo-image {
 }
 .slider .list .item .content p{
     position: relative;
-    /* top: 40vh; */
+    /* top: -2vh;  */
     /* left: -100vh; */
-    padding-bottom: 12px;
+    padding-bottom: 20px;
 }
 
 .slider .list .item .content .work{
@@ -250,11 +140,13 @@ header.scrolled .logo-image {
     padding-bottom: 25px;
     font-weight: bold;
     position: relative;
-    /* top: 32vh;
-    left: -100vh; */
+ /* top: -3.5vh; */
+    /* left: -100vh;  */
     word-spacing: 5px;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
+
+
 /* item default */
 .slider .list .item .image{
     flex-shrink: 0;
@@ -474,368 +366,274 @@ header.scrolled .logo-image {
 
 
 
-/*  */
-
-/* Media Queries for Responsiveness */
-
-
-  /* Mobile (1000px and below) */
-  @media screen and (max-width: 1030px) {
-
-    /* Blogger Section */
-    #Blogger {
-        padding: 50px 5px;
-        text-align: center;
-      }
-      
-      /* Card Container */
-      .SS {
-        display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Rows adjust based on content */
-        gap: 40px; /* Spacing between cards */
-        padding: 20px;
-      }
-      
-      /* Card Styles */
-      .cad {
-        background-color: #fff;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.3s, box-shadow 0.3s;
-        min-height: 300px; /* Ensure consistent card height */
-      }
-      
-      .cad:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-      }
-      
-      /* Remove Column Spanning */
-      .cad-2, .cad-3, .cad-1, .cad-4 {
-        grid-column: span 1; /* All cards span 1 column (no overlaps) */
-      }
-      
-    
-        
-    }
-
-
-
-
-
-  /* Mobile (1000px and below) */
-@media screen and (max-width: 800px) {
-
-    /* Blogger Section */
-    #Blogger {
-        padding: 50px 5px;
-        text-align: center;
-      }
-      
-      /* Card Container */
-      .SS {
-        display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Rows adjust based on content */
-        gap: 20px; /* Spacing between cards */
-        padding: 20px;
-      }
-      
-      /* Card Styles */
-      .cad {
-        background-color: #fff;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.3s, box-shadow 0.3s;
-        min-height: 300px; /* Ensure consistent card height */
-      }
-      
-      .cad:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-      }
-      
-      /* Remove Column Spanning */
-      .cad-2, .cad-3, .cad-1, .cad-4 {
-        grid-column: span 1; /* All cards span 1 column (no overlaps) */
-      }
-      
-    
-        
-    }
-
-
-
-/* Tablet (768px and below) */
-@media screen and (max-width: 768px) {
-    .slider .list::after {
-        filter: blur(2px); /* Apply blur effect */
-    }
-
-    #world {
-        padding: 10vh 5%;
-        gap: 5vh;
-    }
-
-    .slider .list .item .content p {
-        position: relative;
-        top: -2vh;
-    }
-
-    .slider .list .item .content .work {
-        font-size: 35px;
-        width: 25vh;
-    }
-
-    .ME h1 {
-        font-size: 45px;
-    }
-
-    .ME p {
-        font-size: 16px;
-    }
-
-    .Services {
-        gap: 5vh;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .card-1, .card-2, .card-3, .card-4 {
-        flex: 1 1 80%;
-        max-width: 80%;
-    }
-
-    .containe img {
-        width: 12vh;
-    }
+/* #################################################################################################################### */
+/* General Styles */
+.slider .list .item .content {
+    position: absolute;
+    top: 35%; /* Increased the vertical distance from the top */
+    left: 6.5%; /* Keep the slight left positioning */
+    transform: translateX(0); /* Keep content in place */
+    width: 80%; /* Restrict the width to prevent stretching */
+    max-width: 500px; /* Set a maximum width */
+    text-align: start; /* Ensure text aligns to the left */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: start; /* Align items to the left */
+    justify-content: start; /* Top-align the content */
+    font-size: 1.1em; /* Standard font size */
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    gap: 5px; /* Reduced gap between the items */
 }
 
-/* Mobile (540px and below) */
-@media screen and (max-width: 540px) {
-    #world {
-        padding: 1.25vh 1.25%;
-        display: grid;
-    }
-
-    .slider .list .item .content p {
-        position: relative;
-        top: -2.5vh;
-    }
-
-    .slider .list .item .content .work {
-        font-size: 30px;
-        width: 30vh;
-    }
-
-    .ME h1 {
-        font-size: 7.5px;
-    }
-
-    .ME p {
-        font-size: 15px;
-    }
-
-    .Services {
-        gap: 0.75vh;
-        flex-direction: row;
-        align-items: center;
-        position: relative;
-    }
-
-    .card-1, .card-2, .card-3, .card-4 {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .containe img {
-        width: 2.5vh;
-    }
-
-    button {
-        font-size: 4px;
-        padding: 3px 5px;
-    }
+/* Heading styles */
+.slider .list .item .content h2 {
+    font-size: 139px;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1em; /* Reduced line-height */
+    transform: translateY(-100%);
+    transition: transform 1s;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin-bottom: 0px; /* Reduced margin between h2 and paragraph */
 }
 
-/* Mobile (480px and below) */
-@media screen and (max-width: 480px) {
-    #world {
-        padding: 10vh 5%;
-    }
+/* Paragraph styles */
+.slider .list .item .content p {
+    padding-bottom: 0px; /* Reduced the bottom padding */
+    margin-bottom: 0; /* Remove additional margin */
+}
 
-    .slider .list .item .content{
-        padding-top: 10vh;
-    }
+/* Work text */
+.slider .list .item .content .work {
+    font-size: 35px;
+    word-wrap: break-word;
+    word-break: break-all; /* Ensures long words break */
+    hyphens: auto; /* Allows automatic hyphenation */
+    overflow-wrap: anywhere; /* Fallback */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin-bottom: 0px; /* Reduced margin between the elements */
+}
 
+/* Last paragraph */
+.slider .list .item .content p:last-child {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-bottom: 5px; /* Reduced padding-bottom */
+    font-weight: bold;
+    word-spacing: 3px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+/* Responsive Design */
+
+/* Medium Screen (1024px and below) */
+@media (max-width: 1024px) {
+    .slider .list .item .content {
+        top: 40%; /* Increased vertical distance */
+        left: 5%;
+        width: 90%;
+        font-size: 1em;
+        max-width: 400px;
+        gap: 4px; /* Reduced gap between elements */
+        height: max-content;
+    }
     .slider .list .item .content h2 {
-        font-size: 80px;
-        width: 25vh;
+        font-size: 100px;
+        margin-bottom: 3px; /* Reduced margin between h2 and paragraph */
     }
-
-    .slider .list .item .content .work{
-        width: 23vh;
-    }
-
-    .slider .list .item .content .yapp{
-        position: relative;
-        top: -5vh;
-    }
-
-    .ME h1 {
+    .slider .list .item .content .work {
         font-size: 30px;
-    }
-
-    .ME p {
-        font-size: 14px;
-    }
-
-    .Services {
-        gap: 3vh;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .card-1, .card-2, .card-3, .card-4 {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .containe img {
-        width: 10vh;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 12px 20px;
+        margin-bottom: 3px; /* Reduced margin */
     }
 }
 
-
-
-/* Mobile (480px and below) */
-@media screen and (max-width: 420px) {
-  /*    
-    .slider .list .item .content{
-        padding-top: 0vh;
+/* Small Screen (767px and below) */
+@media (max-width: 767px) {
+    .slider .list .item .content {
+        top: 35%; /* Increased vertical distance */
+        left: 5%;
+        width: 100%;
+        font-size: 0.9em;
+        max-width: 360px;
+        gap: -3px; /* Reduced gap */
     }
-
-
-    .slider .list .item .content .yapp{
-        position: relative;
-        top: -5vh;
-    } */
-
-    .slider .list .item .content{
-        padding-top: 0vh;
-    } 
-     
     .slider .list .item .content h2 {
         font-size: 75px;
-        width: 25vh;
+        margin-bottom: 2px; /* Reduced margin */
     }
-
-    .slider .list .item .content .work{
-        width: 30vh;
-        position: relative;
-        top: -1.5vh;
-        font-size: 38px;
-    }
-
-    .slider .list .item .content .yapp{
-        position: relative;
-        top: -4vh;
-        font-size: 17px;
+    .slider .list .item .content .work {
+        font-size: 25px;
+        margin-bottom: 2px; /* Reduced margin */
     }
 }
 
+/*  */
+/* Media query for screens between 600px and 650px */
+@media (max-width: 650px) and (min-width: 600px) {
+    .slider .list .item .content {
+        top: 30%; /* Adjusted vertical position */
+        left: 5%;
+        width: 100%;
+        font-size: 0.9em;
+        max-width: 360px;
+        gap: 0px; /* Set gap to 0 to reduce space between elements */
+        padding: 0; /* Remove padding to reduce gaps further */
+    }
 
-
-/* Mobile (380px and below) */
-@media screen and (max-width: 380px) {
-   
+    /* Reduce gap between heading and paragraphs */
     .slider .list .item .content h2 {
+        font-size: 50px;
+        margin-bottom: -zpx; /* Adjusted margin to reduce gap */
         position: relative;
-        top: -5vh;
-        font-size: 70px;
-        width: 33vh;
     }
 
-    .slider .list .item .content .work{
-        width: 35vh;
-        position: relative;
-        top: -7vh;
-        font-size: 35px;
+    .slider .list .item .content .work {
+        font-size: 25px;
+        margin-bottom: 0px; /* Adjusted margin to reduce gap */
     }
 
-    .slider .list .item .content .yapp{
-        position: relative;
-        top: -11.5vh;
-        font-size: 15px;
+    /* Ensure the last paragraph has reduced gap as well */
+    .slider .list .item .content p:last-child {
+        margin-bottom: 0; /* Remove bottom margin */
     }
-
 }
 
-/* Mobile (360px and below) */
-@media screen and (max-width: 360px) {
-    #world {
-        padding: 2.5vh 2.5%;
+/*  */
+
+/* Extra Small Screen (480px and below) */
+@media (max-width: 480px) {
+    .slider .list .item .content {
+        top: 30%; /* Further increased vertical distance */
+        left: 5%;
+        width: 100%;
+        font-size: 0.8em;
+        max-width: 260px;
+        gap: 2px; /* Further reduced gap */
     }
-
-   
-    /* .slider .list .item .content{
-        padding-top: -3vh;
-    } */
-
     .slider .list .item .content h2 {
-        font-size: 70px;
-        width: 28vh;
+        font-size: 50px;
+        margin-bottom: 1px; /* Further reduced margin */
     }
-
-    .slider .list .item .content .work{
-        width: 28vh;
-        position: relative;
-        top: -1vh;
-    }
-
-    .slider .list .item .content .yapp{
-        position: relative;
-        top: -5vh;
-    }
-
-
-
-    .ME h1 {
-        font-size: 15px;
-    }
-
-    .ME p {
-        font-size: 7px;
-    }
-
-    .Services {
-        gap: 1.5vh;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .card-1, .card-2, .card-3, .card-4 {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .containe img {
-        width: 5vh;
-    }
-
-    button {
-        font-size: 8px;
-        padding: 6px 10px;
+    .slider .list .item .content .work {
+        font-size: 20px;
+        margin-bottom: 1px; /* Further reduced margin */
     }
 }
 
 
-  
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* General Layout Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders don't cause overflow */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+/* Content Wrapper */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap to the next line if there isn't enough space */
+    justify-content: center; /* Centers the content horizontally */
+    padding: 20px;
+    gap: 20px; /* Space between items */
+}
+
+/* Content Boxes */
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 300px; /* Minimum width to ensure it doesn't get too narrow */
+    max-width: 100%; /* Makes sure the content box doesn't exceed its container */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow of content */
+    transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+
+/* Title */
+.content-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* Margin between title and paragraph */
+}
+
+/* Paragraph */
+.content-box p {
+    font-size: 1em;
+    margin-bottom: 15px; /* Margin between paragraphs */
+    text-align: left;
+}
+
+/* For responsiveness on medium screens (tablets, etc.) */
+@media (max-width: 1024px) {
+    .content-box {
+        min-width: 250px; /* Slightly smaller for medium screens */
+    }
+}
+
+/* For responsiveness on small screens (smartphones) */
+@media (max-width: 767px) {
+    .content-box {
+        min-width: 200px; /* Even smaller for mobile screens */
+        padding: 15px; /* Less padding on mobile to fit content */
+    }
+
+    .content-box h2 {
+        font-size: 1.2em; /* Adjust the font size */
+    }
+
+    .content-box p {
+        font-size: 0.9em; /* Adjust the font size */
+    }
+}
+
+/* For Microsoft Lumia and similar small devices (Width ~ 360px, Height ~ 640px) */
+@media (max-width: 360px) {
+    .content-box {
+        min-width: 180px; /* Make the content box even smaller */
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .content-box h2 {
+        font-size: 1.1em; /* Adjust font size to prevent overflow */
+    }
+
+    .content-box p {
+        font-size: 0.8em; /* Smaller font size for better readability */
+    }
+
+    /* Reducing spacing between content */
+    .content-box h2, .content-box p {
+        margin-bottom: 8px; /* Reduce space between content */
+    }
+}
+
+/* Prevent large text from overflowing */
+@media (max-width: 480px) {
+    .content-box h2 {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .content-box p {
+        font-size: 0.8em; /* Smaller text for mobile devices */
+    }
+}
+
+
+/*  */

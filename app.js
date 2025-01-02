@@ -62,10 +62,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // TECH
 // Get the video element
-const video = document.getElementById('background-video');
+// const video = document.getElementById('background-video');
 
 // Slow down the video (set playback rate to 0.5 for half speed)
-video.playbackRate = 0.5;
+// video.playbackRate = 0.5;
+
+const video = document.getElementById('background-video');
+
+video.addEventListener('ended', () => {
+    video.currentTime = 0; // Restart the video
+    video.play(); // Ensure playback starts again
+});
 
 
 
+
+// NAVBAR
+const menuButton = document.getElementById("hamburger-menu");
+const navLinks = document.getElementById("nav-links");
+const menuIcon = document.getElementById("menu-icon");
+
+menuButton.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    // Toggle between hamburger and close icons
+    if (navLinks.classList.contains("active")) {
+        menuIcon.innerHTML = `<path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />`;
+    } else {
+        menuIcon.innerHTML = `<path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />`;
+    }
+});
+
+
+// 

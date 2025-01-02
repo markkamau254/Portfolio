@@ -1,0 +1,308 @@
+/* INITIALS */
+
+/* NAVBAR */
+/* Header Styling */
+header {
+    width: 100%;
+    height: 12vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 1s ease;
+}
+
+header.transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+header.scrolled {
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 7vh; 
+    padding: 0px 80px;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    left: +55px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 15px;
+    font-weight: 800;
+    position: relative;
+    right: 17vh;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+nav ul li a span {
+    position: relative;
+}
+
+nav ul li a span::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; 
+    left: 50%; 
+    width: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    transition: all 0.4s ease; 
+    transform: translateX(-50%); 
+}
+
+nav ul li a span:hover::after {
+    width: 100%; 
+}
+
+.home-link::after {
+    width: 100%;
+}
+
+header.scrolled nav ul li a span::after {
+    background-color: #e0e0e0;
+}
+
+/* Icon Styling */
+nav ul li .join {
+    padding-right: 40px;
+}
+
+nav ul li a i {
+    margin-left: -18px;
+    font-size: 16.5px;
+}
+
+nav ul li .lens {
+    padding-left: 50px;
+}
+
+header.scrolled nav ul li a {
+    color: grey; 
+    font-size: 12px; 
+    text-shadow: none;
+}
+
+header.scrolled nav ul li a i {
+    margin-left: -18px;
+    font-size: 16.5px;
+}
+
+header.scrolled nav ul li .lens {
+    padding-left: 39px;
+}
+
+header.scrolled nav ul {
+    position: relative;
+    left: +45px;
+}
+
+/* Logo Image Transition */
+.logo-image {
+    width: 120px;
+    position: relative;
+    top: 20px;
+    left: 2.6vh;
+    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+header.scrolled .logo-image {
+    width: 150px;
+    transform: translateY(0);
+    height: 15vh;
+    position: relative;
+    top: 30px;
+    left: 2.7vh;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+#hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+}
+
+/* General Styles */
+.container {
+    width: 100%;
+}
+
+/* Hamburger Menu */
+/* Hamburger Menu */
+/* Hamburger Menu */
+#hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 50px;
+    z-index: 1001;
+}
+
+#menu-icon path {
+    fill: white; /* Default color */
+    transition: fill 0.3s ease;
+}
+
+/* Change Hamburger Icon Color on Scroll */
+header.scrolled #menu-icon path {
+    fill: black; /* Black color when scrolled */
+}
+
+/* Change Hamburger Icon Color When Toggled */
+#hamburger-menu.toggled #menu-icon path {
+    fill: black; /* Black color when toggled */
+}
+
+/* Hover Effect */
+#hamburger-menu:hover #menu-icon path {
+    fill: black; /* Ensure hover also applies */
+}
+
+
+
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 100px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.show {
+    transform: translateX(300px);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+}
+
+.sidebar ul li a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ######################################################################## */
+/* Base Styles */
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #nav-links {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    /* Header adjustments */
+    header {
+        padding: 0 20px;
+        transition: none;
+    }
+
+    /* Navigation adjustments */
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 13vh;
+        right: 0;
+        width: 79%;
+        padding: 20px 0;
+        gap: 25px;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    #nav-links li {
+        text-align: center;
+    }
+
+    /* Hamburger menu adjustments */
+    #hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1200;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 20px;
+        padding-right: 6vh;
+    }
+
+    header.scrolled #hamburger-menu {
+        margin-left: 150px;
+        transition: 0.1s;
+    }
+
+    /* Logo adjustments for mobile */
+    .logo-image {
+        width: 100px;
+        position: relative;
+        top: 20px;
+        left: 0;
+        transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    header.scrolled .logo-image {
+        width: 100px;
+        transform: translateY(0);
+        margin-left: -86.5px;
+        /* height: 12vh; */
+        margin-bottom: 12px;
+        /* left: -6vw; */
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+}
