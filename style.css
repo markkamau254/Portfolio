@@ -380,7 +380,7 @@ html, body {
 
 	.scroll::before {
 		top: 12px;
-		left: 14px;
+		left: 15px;
 		width: 14px;
 		height: 14px;
 	}
@@ -398,7 +398,7 @@ html, body {
 
 	.scroll::before {
 		top: 10px;
-		left: 10px;
+		left: 12px;
 		width: 10px;
 		height: 10px;
 	}
