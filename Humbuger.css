@@ -168,12 +168,7 @@ header.scrolled #menu-icon path {
 
 /* Change Hamburger Icon Color When Toggled */
 #hamburger-menu.toggled #menu-icon path {
-    fill: black; /* Black color when toggled */
-}
-
-/* Hover Effect */
-#hamburger-menu:hover #menu-icon path {
-    fill: black; /* Ensure hover also applies */
+    fill: white; /* Black color when toggled */
 }
 
 
@@ -181,7 +176,7 @@ header.scrolled #menu-icon path {
 
 
 /* Sidebar */
-.sidebar {
+/* .sidebar {
     position: fixed;
     top: 0;
     left: -300px;
@@ -211,9 +206,9 @@ header.scrolled #menu-icon path {
 
 .sidebar ul li {
     width: 100%;
-}
+} */
 
-.sidebar ul li a {
+/* .sidebar ul li a {
     display: block;
     width: 100%;
     padding: 15px 20px;
@@ -222,7 +217,14 @@ header.scrolled #menu-icon path {
     font-size: 18px;
     font-weight: 600;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
+} */
+
+/* .sidebar ul li a span{
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+} */
 
 /* ######################################################################## */
 /* Base Styles */
@@ -248,6 +250,7 @@ header.scrolled #menu-icon path {
     #nav-links {
         display: none;
         flex-direction: column;
+        /* justify-content: start; */
         background: rgba(0, 0, 0, 0.9);
         position: absolute;
         top: 13vh;
@@ -263,6 +266,8 @@ header.scrolled #menu-icon path {
 
     #nav-links li {
         text-align: center;
+        left: 16vh;
+        position: relative;
     }
 
     /* Hamburger menu adjustments */
@@ -277,7 +282,7 @@ header.scrolled #menu-icon path {
         border: none;
         cursor: pointer;
         margin-left: 20px;
-        padding-right: 6vh;
+        padding-right: 1.5vh;
     }
 
     header.scrolled #hamburger-menu {
@@ -299,7 +304,7 @@ header.scrolled #menu-icon path {
     header.scrolled .logo-image {
         width: 100px;
         transform: translateY(0);
-        margin-left: -86.5px;
+        margin-left: -86px;
         /* height: 12vh; */
         margin-bottom: 12px;
         /* left: -6vw; */
